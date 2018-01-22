@@ -1,0 +1,28 @@
+// Primary navigation
+.primary ul {
+  @media screen and (min-width: $container-tablet) {
+    float: right;
+  }
+}
+.primary li {
+  display: inline-block;
+  margin: 0 .5em;
+  @media screen and (min-width: $container-tablet) {
+    float: left;
+    margin-left: .937em;
+  }
+}
+.primary a {
+  display: block;
+  padding: .3125em .625em;
+  background: #fff;
+  text-transform: uppercase;
+  color: #bbb;
+  font-size: .75em;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+.primary a:hover, .primary .current_page_item a {
+  color: #a1a1a1;
+  border-color: #a1a1a1;
+}

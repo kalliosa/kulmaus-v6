@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  color: #1498da;
+  border-bottom: 1px solid #eee;
+  &:hover {
+    color: #ea5c15;
+    border-color: #ccc;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $headings;
+  font-weight: 500;
+}
+
+.primary ul, .site-footer .some {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-content img, .sidebar img, figure img {
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: $container-mobile) {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}

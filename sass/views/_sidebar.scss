@@ -1,0 +1,15 @@
+/**
+  * PAGE SIDEBAR
+  */
+.sidebar {
+  width: 100%;
+  margin-top: 25px;
+  @media screen and (min-width: $container-mobile) {
+    float: right;
+    width: 30%;
+    font-size: .7em;
+  }
+  @media screen and (min-width: $container-tablet) {
+    font-size: 1em;
+  }
+}

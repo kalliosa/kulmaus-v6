@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import 'normalize'; // Reset browser settings
+@import 'baseline'; // Em Baseline settings (http://joshnh.com/tools/em-baseline-generator.html)
+@import 'config'; // Default configs
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body {
+  background: $background-color;
+  font-family: $font-base;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+@import 'global'; // Global styles
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 .9375em;
+  @media screen and (min-width: $container-desktop) {
+    width: $container-desktop;
+    padding: 0;
+  }
+}
+
+/**
+  * Header
+  */
+.site-header {
+  padding: 1em 1em 0;
+  margin-bottom: .5em;
+  text-align: center;
+  @media screen and (min-width: $container-tablet) {
+    padding: 1.56em 2.81em 0;
+    margin-bottom: .93em;
+    text-align: left;
+  }
+}
+.site-header .site-branding {
+  @media screen and (min-width: $container-tablet) {
+    float: left;
+    width: 50%;
+  }
+}
+.site-header .site-branding a {
+  color: #aaa;
+  display: inline;
+  border: none;
+}
+.site-header .site-title {
+  text-transform: uppercase;
+  display: inline;
+  font-size: 2.4em;
+  @media screen and (min-width: $container-tablet) {
+    float: left;
+  }
+  &:hover a {
+    color: #ea5c15;
+  }
+}
+.site-header .site-branding .logo {
+  display: inline-block;
+  background: #aaa;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  width: 1.1em;
+  height: 1.1em;
+  position: relative;
+  line-height: 1;
+  top: .15em;
+  transition: transform .5s ease-in-out;
+}
+.site-header .site-branding a:hover .logo {
+  background: #ea5c15;
+}
+.site-header .site-branding .logo span {
+  display: inline-block;
+  font-size: .65em;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.site-header .site-title:hover .logo {
+  transform: rotate(405deg);
+}
+.site-branding .site-description {
+  margin: .5em 0;
+  font-size: .8em;
+  color: #ccc;
+  @media screen and (min-width: $container-tablet) {
+    float: left;
+    margin: 1.35em 0 0 .5em;
+  }
+}
+.site-header .primary {
+  margin: 1em 0;
+  @media screen and (min-width: $container-tablet) {
+    float: right;
+    width: 50%;
+    margin: .93em 0 0;
+  }
+}
+@import 'navigation';
+
+/**
+  * Content
+  */
+@import 'views/page';
+@import 'views/sidebar';
+@import 'features/forms';
+
+/**
+  * Footer
+  */
+.site-footer {
+  text-align: center;
+  font-size: .75em;
+  margin-top: 4em;
+}
+.subpage .site-footer {
+  padding-top: 2em;
+  border-top: 1px solid #eee;
+}
+.site-footer .some {
+  margin-bottom: 1.2em;
+  font-size: .8em;
+}
+.some li {
+  display: inline-block;
+  margin: 0 .625em;
+}

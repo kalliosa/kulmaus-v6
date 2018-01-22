@@ -1,0 +1,81 @@
+/**
+  * HERO STYLE
+  */
+.welcome, .page-header {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  color: #5a5a5d;
+  text-align: center;
+  padding: 1em .5em;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+  @media screen and (min-width: $container-mobile) {
+    padding: 2em 1.5em;
+  }
+  @media screen and (min-width: $container-tablet) {
+    font-size: 2em;
+    padding: 3em 2em;
+  }
+  @media screen and (min-width: $container-desktop) {
+    font-size: 2.5em;
+    padding: 3.5em 3em;
+  }
+  & p {
+    margin-bottom: 0;
+  }
+}
+.welcome h2 {
+  font-family: $font-base;
+  font-size: 1em;
+}
+.page-header {
+  padding: 1em 0;
+  font-size: 1em;
+  margin-bottom: 2em;
+  @media screen and (min-width: $container-mobile) {
+    padding: 1.2em 0;
+  }
+  @media screen and (min-width: $container-tablet) {
+    padding: 2em 0;
+    font-size: 1.5em;
+  }
+}
+.page-header h1 {
+  margin-bottom: 0;
+}
+.welcome a {
+  color: #1498da;
+  &:hover {
+    color: #ea5c15;
+  }
+}
+
+/**
+  * PAGE STYLES
+  */
+.site-content {
+  padding: 1.56em 0;
+}
+
+.content-area .site-main {
+  @media screen and (min-width: $container-mobile) {
+    float: left;
+    width: 68%;
+  }
+}
+.content-area.full-width .site-main {
+  width: 100%;
+  float: none;
+}
+
+.site-main ul, .sidebar ul {
+  margin-left: 1.56em;
+}
+.site-main ul em, .sidebar ul em {
+  color: #bbb;
+}
+
+/* ERROR 404 */
+.error404 {
+  text-align: center;
+}
