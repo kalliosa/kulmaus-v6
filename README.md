@@ -28,5 +28,5 @@ You can set default values, like CSS breakpoints and font-family in `sass/config
 ## No SASS
 If you want to use theme without SASS
 1. Remove or comment out this line in `functions.php` (Line 90)
-  1. `wp_enqueue_style( 'styles', THEMEROOT . '/css/layout.css' );`
+  `wp_enqueue_style( 'styles', THEMEROOT . '/css/layout.css' );`
 1. Add your CSS styles to `style.css` file
