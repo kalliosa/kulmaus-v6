@@ -10,7 +10,7 @@
 /**
  * The theme definitions
  */
-define( 'KULMAUS_VERSION', '6.0' );
+define( 'KULMAUS_VERSION', '6.1' );
 define('THEMEROOT', get_stylesheet_directory_uri()); // Set themeroot URL to THEMEROOT
 define('IMAGES', THEMEROOT . '/images'); // Set images URL to IMAGES
 
@@ -62,11 +62,6 @@ function disable_emojicons_tinymce( $plugins ) {
 }
 
 /**
- * Set a locale for English language
- */
-setlocale( LC_ALL, 'en_EN.utf8' );
-
-/**
  * Navigation menus.
  */
 register_nav_menus( array(
@@ -89,7 +84,7 @@ add_action( 'wp_head', 'kulmaus_pingback_header' );
 function kulmaus_scripts() {
   wp_enqueue_style( 'styles', THEMEROOT . '/css/layout.css' );
   wp_deregister_script( 'jquery' );
-  wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), false, true); // Load jQuery @ Footer
+  wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js', array(), false, true); // Load jQuery @ Footer
   wp_enqueue_script( 'jquery' );
   wp_enqueue_script( 'scripts', THEMEROOT . '/js/all.js', array(), KULMAUS_VERSION, true );
 }

@@ -11,20 +11,20 @@
 
 ?>
 
-</div>
+    </div>
 
-	<footer class="site-footer">
-		<div class="site-info">
-      <ul class="some">
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Github</a></li>
-      </ul>
-			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-		</div><!-- .site-info -->
-	</footer>
+    <footer class="site-footer">
+      <div class="site-info">
+        <ul class="some">
+          <li><a href="https://twitter.com/kalliosa">Twitter</a></li>
+          <li><a href="https://fi.linkedin.com/pub/sami-kallio/2a/70a/6b3">LinkedIn</a></li>
+          <li><a href="https://github.com/kalliosa">Github</a></li>
+        </ul>
+        <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+      </div><!-- .site-info -->
+    </footer>
 
-<?php wp_footer(); ?>
+  <?php wp_footer(); ?>
 
 </body>
 </html>
